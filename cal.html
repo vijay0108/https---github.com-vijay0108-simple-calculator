@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="C:\Users\mss2015\Documents\My Bluetooth\Desktop\prog\simple calculator\cal.js"></script>
+  <link href="C:\Users\mss2015\Documents\My Bluetooth\Desktop\prog\simple calculator\cal.css" rel="css"/>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Simple Calculator</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="light.css" id="theme" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <center>
+    <div class="container">
+      <h1>Simple Calculator</h1>
+      <div class="first-row">
+        <input type="text" name="result" class="result" id="result" value="" placeholder="Your Result" readonly />
+        <input type="button" value="C" onclick="clearScreen()" class="clear" />
+      </div>
+      <div class="second-row">
+        <input type="button" value="01" onclick="liveScreen(1)" id="one" />
+        <input type="button" value="02" onclick="liveScreen(2)" id="two" />
+        <input type="button" value="03" id="three" onclick="liveScreen(3)" />
+        <input type="button" value="+" onclick="liveScreen('+')" />
+      </div>
+      <div class="third-row">
+        <input type="button" value="04" id="four" onclick="liveScreen(4)" />
+        <input type="button" value="05" id="five" onclick="liveScreen(5)" />
+        <input type="button" value="06" id="six" onclick="liveScreen(6)" />
+        <input type="button" value="-" onclick="liveScreen('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" value="07" id="seven" onclick="liveScreen(7)" />
+        <input type="button" value="08" id="eight" onclick="liveScreen(8)" />
+        <input type="button" value="09" id="nine" onclick="liveScreen(9)" />
+        <input type="button" value="x" onclick="liveScreen('*')" />
+      </div>
+      <div class="fifth-row">
+        <input type="button" value="/" onclick="liveScreen('/')" />
+ <input type="button" value="00" id="zero" onclick="liveScreen(0)" />
+        <input type="button" value="." class="dot" onclick="liveScreen('.')" />
+        <input type="button" value="=" onclick="result.value = eval(result.value)" />
+      </div>
+      <div class="bottom-buttons">
+        
+      
+      </div>
+    </div>
+  </center>
+  <scriptsrcsrcsrcsrcsrcsrcsrcsrc src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></scriptsrcsrcsrcsrcsrcsrcsrcsrc>
+  <script src="script.js" async defer></script>
+</body>
+</html>
